@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+header {
+  padding: 20px 15px 20px 15px;
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+  margin-top: 3px;
+}
+
+.menu {
+  font-size: 10px;
+  height: 28px;
+  width: 28px;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-primary:hover {
+    border-color: white;
+    background-color: #FFAA00;
+    color: white;
+}
+
+.btn:focus, .btn:active {
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.container {
+ padding: 20px;
+}
+
+.container1 {
+ padding: 20px;
+ background: black;
+}
+
+#contact {
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #FFAA00;
+  background-color: black;
+  color: white;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  #contact:hover {
+    box-shadow: 0px 0px 5px 5px #FFAA00;
+  }
+}
+
+.dropdown-menu {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 3px solid #FFAA00;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:focus {
+  background-color: #ffd071;
+}
+
+.wave {
+  width: 100%;
+}
+
+.penta {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.splitter {
+  width: 100%;
+}
+
+.inverse {
+  color: white;
+}
