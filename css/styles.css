@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -23,42 +24,42 @@ header {
 }
 
 .btn-outline-primary {
-    color: white;
-    border-color: white;
+  color: white;
+  border-color: white;
 }
 
 .btn-outline-primary:hover {
-    border-color: white;
-    background-color: #FFAA00;
-    color: white;
+  border-color: white;
+  background-color: #FFAA00;
+  color: white;
 }
 
 .btn:focus, .btn:active {
-   outline: none !important;
-   box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
-    color: black;
-    background-color: #FFAA00;
-    border-color: white;
-    transition: 0s ease-in-out;
+  color: black;
+  background-color: #FFAA00;
+  border-color: white;
+  transition: 0s ease-in-out;
 }
 
 .container {
- padding: 20px;
+  padding: 20px;
 }
 
 .work-bg {
- background: black;
- max-width: 100%;
- margin: 0;
+  background: black;
+  max-width: 100%;
+  margin: 0;
 }
 
 .music-bg {
- background: #FFAA00;
- max-width: 100%;
- margin: 0;
+  background: #FFAA00;
+  max-width: 100%;
+  margin: 0;
 }
 
 .contact {
@@ -131,6 +132,9 @@ button:focus {
 .mailto {
   display: block;
   text-align: center;
+  height: 90px;
+  width: 100px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -166,4 +170,76 @@ p {
 iframe {
   display: block;
   border-style: none;
+}
+
+.bi  {
+  margin-top: -4px;
+}
+
+nav {
+  margin: 10px 10px 0px 0px;
+}
+
+a {
+  color: #FFAA00;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-a:hover, .subtext-a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.gallery {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+section {
+  margin: 20px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+}
+
+.subtext {
+  font-weight: 500;
+  margin: 0;
+}
+
+.subtext-links {
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.io {
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #FFAA00;
+  background-color: black;
+  color: white;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .io:hover {
+    box-shadow: 0px 0px 5px 5px #FFAA00;
+  }
 }
