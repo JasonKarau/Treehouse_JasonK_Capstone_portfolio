@@ -48,12 +48,13 @@ header {
 
 .container {
   padding: 20px;
+  max-width: 100%
 }
 
 .work-bg {
   background: black;
   max-width: 100%;
-  margin: 0;
+  margin: auto;
 }
 
 .music-bg {
@@ -103,6 +104,12 @@ button:focus {
 
 @media (hover: hover) {
   .button-inverse:hover {
+    box-shadow: 0px 0px 5px 5px #FFAA00;
+  }
+}
+
+@media (hover: hover) {
+  .io:hover {
     box-shadow: 0px 0px 5px 5px #FFAA00;
   }
 }
@@ -161,12 +168,6 @@ p {
   color: white;
 }
 
-.spotify {
-  margin: auto;
-  width: 250px;
-  margin-bottom: 80px;
-}
-
 iframe {
   display: block;
   border-style: none;
@@ -200,7 +201,7 @@ a:hover {
   display: block;
   margin: auto;
   max-width: 100%;
-  border: 2px solid black;
+  box-shadow: 0px 0px 5px 2px grey;
 }
 
 section {
@@ -214,7 +215,7 @@ section {
 }
 
 .subtext {
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -222,6 +223,16 @@ section {
   font-weight: 500;
   margin-left: 10px;
   margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.hidden-subtext {
+  text-align: left;
+  margin: 0px 10px 20px 10px;
+}
+
+.card {
+  border: none;
 }
 
 .io {
@@ -238,8 +249,98 @@ section {
   cursor: pointer;
 }
 
-@media (hover: hover) {
-  .io:hover {
-    box-shadow: 0px 0px 5px 5px #FFAA00;
+.spotify {
+  width: 250px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 320px) {
+  .subtext {
+    font-size: 16px;
+  }
+
+  .spotify {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 375px) {
+  .subtext {
+    font-size: 20px;
+  }
+
+  .spotify {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 425px) {
+  .spotify {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-column-gap: 3em;
+  }
+
+  .spotify {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    margin-top: 30px;
+    text-align: left;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: left !important;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .container {
+    padding: 20px 150px 20px 150px;
+  }
+
+  .footcenter {
+    text-align: center;
+  }
+
+  .footer-copyright {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 3em;
+  }
+
+  .spotify {
+    width: 800px;
   }
 }
